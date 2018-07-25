@@ -1,0 +1,140 @@
+﻿@font-face {
+    font-family: 'Ananda Personal Use';
+    src: url('Font/Ananda Personal Use.ttf') format('truetype');
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+.header {
+    background-color: #B2AFAB;
+    background-position: center center;
+    background-size: cover;
+    min-height: 75vh;
+    max-height: 999px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    display: block;
+    text-align: center;
+    background-image: url(images/antoine-barres.jpg);
+}
+
+.filter {
+    background-color: rgba(0, 0, 0, 0.5);
+    content: "";
+    display: block;
+    height: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+}
+
+.header-menu {
+    margin-top: 50px;
+    z-index:2;
+}
+
+.navbar-inverse {
+    background-color: transparent !important;
+    border-color: transparent !important;
+}
+
+.navbar {
+    margin-bottom: 0px !important;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: #fff !important;
+    font-family: 'Roboto', sans-serif;
+    font-size:16px;
+}
+
+
+
+
+
+
+.title-brand {
+    max-width: 730px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 3;
+    text-align: center;
+    color: #FFFFFF;
+    display: block;
+}
+.presentation-subtitle {
+    font-size: 1.7em;
+    color: #FFFFFF;
+}
+
+.presentation-title {
+    font-size: 8em;
+    font-weight: 700;
+    margin: 0;
+    color: #FFFFFF;
+    font-family: 'Ananda Personal Use';
+    background: #fbf8ec;
+    background: -moz-linear-gradient(top, #FFFFFF 35%, #4e6773 100%);
+    background: -webkit-linear-gradient(top, #FFFFFF 35%, #4e6773 100%);
+    background: linear-gradient(to bottom, #FFFFFF 35%, #4e6773 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.fog-low {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin-left: -35%;
+    margin-bottom: -50px;
+    width: 110%;
+    opacity: .85;
+}
+
+    .fog-low.right {
+        margin-left: 30%;
+        opacity: 1;
+    }
+
+    .fog-low img {
+        width: 100%;
+    }
+
+.header.section-dark .content-center, .header.section-dark .category-absolute {
+    z-index: 1;
+}
+
+.header .content-center {
+    margin-top: 175px;
+}
+
+
+@keyframes cloudLoop {
+    0% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+
+    100% {
+        -webkit-transform: translate3d(-50%, 0, 0);
+        transform: translate3d(-50%, 0, 0);
+    }
+}
+
+.moving-clouds {
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+    width: 250.625em;
+    height: 42.75em;
+    -webkit-animation: cloudLoop 80s linear infinite;
+    background-image: url('images/clouds.png');
+    animation: cloudLoop 80s linear infinite;
+}
